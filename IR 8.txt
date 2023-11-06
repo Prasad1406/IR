@@ -12,7 +12,7 @@ model = bm([('age', 'target'), ('sex', 'target'), ('exang', 'target'),
                       ('cp', 'target'), ('target', 'restecg'), ('target', 'chol')])
 
 
-model.fit(hd, estimator= me)
+model.fit(hd, estimator= mle)
 
 
 HeartDiseaseTestInfer = ve(model)
